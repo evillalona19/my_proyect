@@ -4,7 +4,7 @@ import plotly.express as pe
 
 st.header('Ventas de Vehiculos') #crea encabezado
 
-data = pd.read_csv('Users/EVILLALONA/Phyton Basico/Proyecto Sprint 5/my_proyect/notebooks/vehicles_us.csv') # lee el conjunto de datos
+data = pd.read_csv('/Users/EVILLALONA/Phyton Basico/Proyecto Sprint 5/my_proyect/notebooks/vehicles_us.csv') # lee el conjunto de datos
 boton = st.button('Contruye Histograma') # crea un boton
 
 if boton:
