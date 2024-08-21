@@ -5,9 +5,10 @@ import plotly.express as pe
 st.header('Ventas de Vehiculos') #crea encabezado
 
 data = pd.read_csv('/Users/EVILLALONA/Phyton Basico/Proyecto Sprint 5/my_proyect/notebooks/vehicles_us.csv') # lee el conjunto de datos
-boton = st.button('Contruye Histograma') # crea un boton
+boton_h = st.button('Contruye Histograma') # crea un boton
+boton_d = st.button('Contruye Histograma') # crea un boton
 
-if boton:
+if boton_h:
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches') 
 
     #crear histograma
@@ -15,7 +16,7 @@ if boton:
 
     st.plotly_chart(fig, use_container_width=True)
 
-if boton:
+if boton_d:
     st.write('Creación de un grafico de dispersion para el conjunto de datos de anuncios de venta de coches')
 
     fig = pe.scatter(data, x="odometer", y="price") # crear un gráfico de dispersión
