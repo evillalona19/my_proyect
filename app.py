@@ -5,8 +5,8 @@ import plotly.express as pe
 st.header('Ventas de Vehiculos') #crea encabezado
 
 data = pd.read_csv('/Users/EVILLALONA/Phyton Basico/Proyecto Sprint 5/my_proyect/notebooks/vehicles_us.csv') # lee el conjunto de datos
-boton_h = st.button('Contruye Histograma') # crea un boton
-boton_d = st.button('Contruye Histograma') # crea un boton
+boton_h = st.button('Contruye Histograma') # crea un boton para histograma
+boton_d = st.button('Contruye Grafico Dispersion') # crea un boton para grafico dispersion
 
 if boton_h:
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches') 
