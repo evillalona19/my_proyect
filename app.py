@@ -4,7 +4,7 @@ import plotly.express as pe
 
 st.header('Panel de Control Ventas de Vehiculos') #crea encabezado
 
-data = pd.read_csv('vehicles_us.csv') # lee el conjunto de datos
+data = pd.read_csv('notebooks/vehicles_us.csv') # lee el conjunto de datos
 boton_h = st.checkbox('Construye Histograma') # crea un boton para histograma
 boton_d = st.checkbox('Construye Grafico Dispersion') # crea un boton para grafico dispersion
 
