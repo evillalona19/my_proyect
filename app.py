@@ -19,7 +19,7 @@ if boton_h:
 if boton_d:
     st.write('Creación de un grafico de dispersion para el conjunto de datos de anuncios de venta de coches')
 
-    fig = pe.scatter(data, x="model", y="price") # crear un gráfico de dispersión
+    fig = pe.scatter(data, x="odometer", y="price") # crear un gráfico de dispersión
     st.plotly_chart(fig, use_container_width=True) 
 
 
